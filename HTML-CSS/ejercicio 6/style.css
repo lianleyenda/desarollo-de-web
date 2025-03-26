@@ -1,0 +1,20 @@
+.fondo {
+  background-color: skyblue;
+  width: 200px;
+  height: 300px;
+  text-align: center;
+}
+
+.letra {
+  color: azure;
+  font-size: 20px; /*tmaño de la letra*/
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif; /*tipo grafia*/
+  text-align: center; /*aliniacion del texto*/
+}
+.bloque {
+  display: block;
+  width: 250px;
+  padding: 10px;
+  margin: 10px 20px;
+}

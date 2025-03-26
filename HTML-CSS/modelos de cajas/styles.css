@@ -1,0 +1,41 @@
+.block {
+ display: block;
+ width: 200px;
+ background-color: lightblue;
+ padding: 10px;
+ margin: 10px 0 ;
+
+
+}
+
+
+.inline {
+
+    display: inline;
+    background-color: lightcoral;
+    padding: 5px;
+}
+
+
+
+.inline-block{
+    display: inline-block;
+    width: 150px;
+    background-color: lightgreen;
+}
+
+
+
+.flex_item{
+    background-color: skyblue;
+    padding: 10pk;
+    margin: 5px;
+}
+
+
+.flex_container{
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+    padding: 10px;
+}

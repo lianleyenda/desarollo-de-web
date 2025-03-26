@@ -1,0 +1,37 @@
+.bloque {
+  background-color: blue;
+  display: block;
+  width: 250px;
+  padding: 10px;
+  margin: 10px 20px;
+}
+
+.inline {
+  background-color: greenyellow;
+  display: inline;
+  margin: 5px;
+  width: 200px;
+  height: 100px;
+}
+
+.inline-block {
+  background-color: aqua;
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+}
+
+.flex_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex_item {
+  background-color: violet;
+  padding: 10px;
+  margin: 10px;
+}
+.flex_container2 {
+  display: flex;
+  justify-content: space-around;
+}
