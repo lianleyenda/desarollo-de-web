@@ -1,20 +1,46 @@
 .fondo {
-  background-color: skyblue;
-  width: 200px;
-  height: 300px;
+  background-color: #3282b5;
+  width: 300px;
+  height: 350px;
   text-align: center;
+  border-radius: 5px;
 }
 
 .letra {
-  color: azure;
+  color: #c7e5fd;
   font-size: 20px; /*tmaño de la letra*/
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif; /*tipo grafia*/
   text-align: center; /*aliniacion del texto*/
+  padding-top: 20px;
 }
-.bloque {
-  display: block;
-  width: 250px;
-  padding: 10px;
-  margin: 10px 20px;
+
+.input {
+  height: 8%;
+  width: 85%;
+  margin: 6px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #0c4b73;
+  height: 40vw;
+  flex-direction: column;
+  align-items: center; /*align-items solamente funciona si se aplico flex-direction */
+}
+
+.boton {
+  height: 8%;
+  width: 85%;
+  margin: 6px;
+  color: black;
+  background-color: #bbe1f8;
+}
+
+.separacion {
+  text-align: center;
+  padding: 50px;
+  font-size: 10px;
+  color: aliceblue;
 }
