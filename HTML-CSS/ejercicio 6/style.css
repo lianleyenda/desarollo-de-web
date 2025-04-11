@@ -44,3 +44,8 @@ body {
   font-size: 10px;
   color: aliceblue;
 }
+
+.vol {
+  text-align: center;
+  padding: 18px;
+}
