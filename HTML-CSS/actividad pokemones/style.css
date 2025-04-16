@@ -1,0 +1,11 @@
+.grilla{
+    
+    display: grid;
+    /*grid-template-columns: 200px 200px 200px;*//*esto es para cada uno de los cuadrados*/
+    /*grid-template-columns: repeat(3, 200px);*//*repite 3 veces 200px*/
+    grid-template-columns: repeat(3, 1fr);/*fr es una fraccion y divide la pagina en la cantidad que diga el
+    primer valor de la funcion*/
+    
+    /*asigna la filas automaticamente*/
+    grid-auto-rows: auto;
+}
