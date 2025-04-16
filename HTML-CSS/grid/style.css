@@ -2,12 +2,13 @@
     
     display: grid;
     /*grid-template-columns: 200px 200px 200px;*//*esto es para cada uno de los cuadrados*/
-    grid-template-columns: repeat(3, 200px);/*repite 3 veces 200px*/
-    /*grid-template-columns: repeat(3, 1fr);*//*fr es una fraccion y divide la pagina en la cantidad que diga el
+    /*grid-template-columns: repeat(3, 200px);/*repite 3 veces 200px*/
+    grid-template-columns: repeat(3, 1fr);/*fr es una fraccion y divide la pagina en la cantidad que diga el
     primer valor de la funcion*/
     
     /*asigna la filas automaticamente*/
     grid-auto-rows: auto;
+    gap: 10px;/*genera espacio entre los elementos*/
     
 }
 
@@ -15,5 +16,54 @@
 img{
     width: 100%;
     object-fit: cover;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1/1;               
 }
+
+@media(max-width: 768px){/*es el corte de la pantalla promedio si tambien con 1024px*/
+    .grilla{
+        grid-template-columns: 1fr;
+    }
+
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    background-color: whitesmoke;
+   
+}
+body{
+
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/503/189/157/pokemon-video-games-pixel-art-pixels-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fondo{
+background-color: #e3e3e3;
+
+}
+  
+ .fondo3{
+    background-color: #fcf468;
+ }
+
+ .fondo2{
+    background-color: #616992;
+ }
+
+ a{
+    font-size: 25px;
+ }
+
+ .fondo4{
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    margin-top: 20px;
+    }
+
+ 
+ 
