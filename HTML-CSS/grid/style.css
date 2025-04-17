@@ -1,69 +1,69 @@
 .grilla{
-    
-    display: grid;
-    /*grid-template-columns: 200px 200px 200px;*//*esto es para cada uno de los cuadrados*/
-    /*grid-template-columns: repeat(3, 200px);/*repite 3 veces 200px*/
-    grid-template-columns: repeat(3, 1fr);/*fr es una fraccion y divide la pagina en la cantidad que diga el
-    primer valor de la funcion*/
-    
-    /*asigna la filas automaticamente*/
-    grid-auto-rows: auto;
-    gap: 10px;/*genera espacio entre los elementos*/
-    
+
+display: grid;
+/*grid-template-columns: 200px 200px 200px;*//*esto es para cada uno de los cuadrados*/
+/*grid-template-columns: repeat(3, 200px);/*repite 3 veces 200px*/
+grid-template-columns: repeat(3, 1fr);/*fr es una fraccion y divide la pagina en la cantidad que diga el
+primer valor de la funcion*/
+
+/*asigna la filas automaticamente*/
+grid-auto-rows: auto;
+gap: 10px;/*genera espacio entre los elementos*/
+
 }
 
 
 img{
-    width: 100%;
-    object-fit: cover;
-    aspect-ratio: 1/1;               
+width: 100%;
+object-fit: cover;
+aspect-ratio: 1/1;               
 }
 
 @media(max-width: 768px){/*es el corte de la pantalla promedio si tambien con 1024px*/
-    .grilla{
-        grid-template-columns: 1fr;
-    }
+.grilla{
+    grid-template-columns: 1fr;
+}
 
 }
 .center{
-    display: flex;
-    justify-content: center;
+display: flex;
+justify-content: center;
 }
 
 header{
-    background-color: whitesmoke;
-   
+background-color: whitesmoke;
+
 }
 body{
 
-    background-image: url("https://c4.wallpaperflare.com/wallpaper/503/189/157/pokemon-video-games-pixel-art-pixels-wallpaper-preview.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+background-image: url("https://c4.wallpaperflare.com/wallpaper/503/189/157/pokemon-video-games-pixel-art-pixels-wallpaper-preview.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
 }
+
+a{
+font-size: 25px;
+}
+
 .fondo{
-background-color: #e3e3e3;
-
+display: flex;
+justify-content: center;
+background-color: grey;
+margin-top: 20px;
 }
-  
- .fondo3{
-    background-color: #fcf468;
- }
 
- .fondo2{
-    background-color: #616992;
- }
+.target {
 
- a{
-    font-size: 25px;
- }
-
- .fondo4{
-    display: flex;
-    justify-content: center;
-    background-color: grey;
-    margin-top: 20px;
+    
+  transition: transform 0.5s cubic-bezier(.37,1.5,0,.17);/* el tiempo que usa y la forma en que se usa la velocidad */
+  border-radius: 10px;
+    }
+    
+    
+.target:hover {
+    /*transform: rotate(45deg);*//*mueve la y -5px tambine se puede con la x*/
+    transform: translateY(-5px);
     }
 
- 
- 
+
