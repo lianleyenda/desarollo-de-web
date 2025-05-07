@@ -80,3 +80,70 @@ for(let i=0; i < miArreglo.length; i++){
     console.log(miArreglo[i])//imprime el la pantalla el arreglo con su posicion
 }
 
+
+//metodos de arreglos
+//lenght -> longitud del arreglo
+
+
+
+const longitud = miArreglo.length;
+console.log(longitud)
+
+//push(valor) -> Agrega un elemento al final
+//equivalente al append de python 
+miArreglo.push("Nicolas");
+console.log("cadena", miArreglo);
+
+//pop() eliamina el ultimo elemento de un arreglo 
+//si queremos lo podemos guardar en una variable
+
+const ultimos = miArreglo.pop();
+console.log("ultimos", ultimos)
+
+
+//shift() elimina el primer valor de un arreglo,
+//tambien lo guarda
+
+const primero = miArreglo.shift();
+console.log(primero)
+
+//unshift(valor) Agrega un elemneto al principio del arreglo
+miArreglo.unshift("lian")
+console.log(miArreglo)
+
+//forEach 
+//SOLO RECCORE, no guarda los valores en ningun lado, 
+//importa el orden de las variables
+miArreglo.forEach( (item, index, miArregloEntero) => {
+console.log(
+    "elemento",
+    item,
+    "index",
+    index,
+);
+})
+
+
+//map recorre el miArreglo, lo modifica con una funcion 
+// y nos devulve uno nuevo
+
+const nuevoArreglo = miArreglo.map((item, index) => {
+   const num = 2
+   return(item += num); 
+
+})
+console.log("nuevo miArreglo", nuevoArreglo)
+
+//filter  crea un nuevo array apartir de los elemenots que cumplan
+//la condicion
+
+const arregloNum = [2,4,5,6]
+const nuevoArreglonum = arregloNum.filter((item) => item % 2 === 0);
+console.log("los numero pares son", nuevoArreglonum )
+
+
+
+
+
+
+
