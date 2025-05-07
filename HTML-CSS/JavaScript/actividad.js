@@ -18,3 +18,20 @@ const productos = inventario.map((item)  => {
 
 console.log(productos)
 
+
+
+
+const Peliculas = []
+
+Peliculas.push({titulo: "tonto y retonto",director: "Cristian Costa", ano:2016 , genero: "Comedia"}, 
+    {titulo: "El Elegido",director: "Leonel Kessi", ano: 2000, genero: "Deporte"},
+    {titulo: "El Chef",director: "Robert Deniro", ano: 2008, genero:"suspenso"},)
+console.log("agregue datos al array",Peliculas)    
+
+const nuevaPelicula = {titulo: "el regreso del calzon usado"}
+Peliculas.unshift(nuevaPelicula);
+console.log("agregue una pelicula al inicio",Peliculas)
+
+const BorrarPelicula = Peliculas.shift();
+console.log("borro la primera pelicula", BorrarPelicula)
+

@@ -147,3 +147,4 @@ console.log("los numero pares son", nuevoArreglonum )
 
 
 
+
