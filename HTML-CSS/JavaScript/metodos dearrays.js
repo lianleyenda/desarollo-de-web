@@ -36,7 +36,7 @@ else{
 }
 
 
-//Switch
+//Switch 
 const dia = 1
 switch(dia){
     case 1: console.log('dia lunes'); break
