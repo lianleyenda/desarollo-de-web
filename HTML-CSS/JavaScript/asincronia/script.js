@@ -32,7 +32,7 @@ button.addEventListener("click", () => {
 //metodos get, post, put, delete
 
 
-//fetch 
+//fetch permite hacer solicitudes HTTP
 fetch('https://rickandmortyapi.com/api/character')
    .then((data) => data.json())
    .then((Response) => console.log("response", Response));
