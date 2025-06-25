@@ -1,37 +1,34 @@
 import './App.css'
-import Usuario from './components/usuarios/Usuarios'
-import { Proveedor } from "./components/provedores /Proveedor";
 import { useEffect, useState } from 'react';
+import './components/RickyMorty/RickyMorty'
 
 function App() {
-const [character, setCharacter] = useState([])
-  //useEffect va a ejutar le codiogo que se necuntra adentro,
-//tantas veces como se actualicen sus dependencias
-//si no hay depencdencias se ejecuta solo antes del primer
-//renderizado
-  useEffect(()=>{
-    fetch('https://rickandmortyapi.com/api/character')
-    .then(data => data.json())
-    .then((response) => setCharacter(response.results))
 
-  }, []);
- 
+  const[nombre, setNombre] = useState("");
+  
+  const handleClick = () =>{
+    console.log(nombre)
+
+  };
+
+  const handleInputChange = (eventoFinaldeFornite) => {
+     setNombre(eventoFinaldeFornite.target.value);
+  };
+  
+  
   return (
     <>
-    {character ? (
-      character.map((item, index) => <p>{item.name}</p>)
-    ): <>cargando...</>}
-    
-    
-    
-    
-    
-    hola mundo
 
-
-     <button>hola soy un boton</button>    
-    <Usuario/>
-    <Proveedor  name = {'Federico'} />
+    <input 
+    type="text" 
+    placeholder='Escribi tu nombre' 
+    onChange={handleInputChange}
+    value={nombre}
+    />
+    
+    { <button onClick={handleClick}>Mostrar</button> /*va sin parentisis siemopre porqu esi no rompe ya que con los parentisis se activa en el momemnto */}
+     {nombre && 
+     <h2>{nombre}</h2>}
     </>
   )
 }
